@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Information Tracing - Ashgard Industries</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+  body {
+      background-color: #0b0f19;
+      color: #e4e4e4;
+      font-family: "Poppins", sans-serif;
+      background-image: linear-gradient(
+        rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      animation: moveGrid 20s linear infinite;
+      z-index: 0;
+    }
+
+        @keyframes moveGrid {
+      from { background-position: 0 0; }
+      to { background-position: 100px 100px; }
+    }
+
+    /* Breadcrumb Section */
+    .breadcrumb-container {
+      background-color: transparent;
+      padding: 12px 40px;
+      margin-top: 100px;
+      border-bottom: transparent;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+    color: #00bcd4; 
+    /* font-weight: bold;  */
+    content: "/"; 
+  }
+
+    .breadcrumb {
+      margin: 0;
+      background: transparent;
+    }
+
+    .breadcrumb-item a {
+      color: #00bcd4;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .breadcrumb-item a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .breadcrumb-item.active {
+      color: #a0a0a0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .service-header {
+      text-align: center;
+      padding: 50px 20px 40px;
+    }
+
+    .service-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #00bcd4;
+    }
+
+    .service-header h5 {
+      color: #a0a0a0;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+
+    .service-header p {
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .service-section {
+      padding: 60px 20px;
+      text-align: justify;
+    }
+
+    .service-section img,
+    .service-section video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .case-section {
+      /* background-color: #111725; */
+      background: linear-gradient(-45deg, #000428, #004e92, #001f3f, #0066cc);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      padding: 60px 20px;
+      border-top: 2px solid #00bcd4;
+      text-align: justify;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .case-section h3 {
+      color: #00bcd4;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 30px 0;
+      color: #00bcd4;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+<nav class="main-nav">
+  <a href="index.html#Home" class="logo">
+    <img class="img" src="img/logo_final.png" alt="Ashgard Industries Logo">
+  </a>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="navbar" id="navbar-menu">
+    <ul role="menubar" class="menubar">
+      <li role="none"><a role="menuitem" href="index.html#Home">Home</a></li>
+      <li role="none"><a role="menuitem" href="index.html#about">About Us</a></li>
+      <li role="none"><a role="menuitem" href="index.html#services">Services</a></li>
+      <li role="none"><a role="menuitem" class="contact-btn" href="index.html#contact">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <ul class="nav-links-mobile" id="navLinksMobile">
+    <li role="none"><a role="menuitem" href="index.html#Home">Home</a></li>
+    <li role="none"><a role="menuitem" href="index.html#about">About Us</a></li>
+    <li role="none"><a role="menuitem" href="index.html#services">Services</a></li>
+    <li role="none"><a role="menuitem" class="contact-btn" href="index.html#contact">Contact Us</a></li>
+  </ul>
+</nav>
+  <!-- Breadcrumbs -->
+  <nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html#Home">Home</a></li>
+      <li class="breadcrumb-item"><a href="index.html#services">Services</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Information Tracing</li>
+    </ol>
+  </nav>
+
+<div class="page-wrapper">
+  <!-- Service Header -->
+  <section class="service-header reveal-up">
+    <h1><i class="bi bi-info-circle"></i> Information Tracing</h1>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet porro, vitae perferendis excepturi, assumenda eos illum, harum rem quam quidem dignissimos. Repellat vitae, nisi consectetur pariatur quae facere quas.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!
+    </p>
+    <!-- <a href="index.html#services" class="back-btn"><i class="bi bi-arrow-left"></i> Back to Services</a> -->
+  </section>
+
+  <!-- Service Section -->
+  <section class="service-section container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0 reveal-left">
+        <img src="img/point.jpg" alt="Tracing Process">
+      </div>
+      <div class="col-md-6 reveal-right">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!
+        </p>
+      </div>
+    </div>
+  </section>  
+</div>
+
+  <!-- Case Section -->
+  <section class="case-section">
+    <div class="container reveal-left">
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet vel sequi temporibus debitis doloremque praesentium distinctio mollitia facilis facere odit, vero quae similique laboriosam obcaecati assumenda velit ullam minima aperiam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!
+      </p>
+      <p>
+        <i class="bi bi-check-circle-fill text-info"></i> <b>Problem:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        <i class="bi bi-gear-fill text-info"></i> <b>Solution:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        <i class="bi bi-bar-chart-fill text-info"></i> <b>Result:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+  <div class="contact-content">
+    <div class ="contact-title">
+        <div class="parallelogram"> </div>
+        <h2 class="reveal-left">Get In Touch</h2>
+    </div>
+    <div class="contact-left reveal-left">
+      <div class="contact-form">
+        <!-- <a href="#Home" class="contact-logo reveal">
+          <img src="img/logo_final.png" alt="Ashgard Industries Logo">
+        </a> -->
+        <h3 style="margin-bottom: 30px; font-size: 24px;">Send us a Message</h3>
+
+        <form id="contactForm" action="submit.php" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="contact-right-blocks reveal-right">
+      <h3>Contact Information</h3>
+      <div class="info-block reveal">
+        <div class="icon-line-group">
+          <div class="icon-placeholder"><i class="bi bi-geo-alt"></i></div>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="icon-info-grid">
+          <p><b>Main Office:</b> C. Congson St., Cambiohan, Casili, Consolacion, Cebu, Philippines</p>
+          <p><b>Main Office:</b> S-3 2F, Antel SPA and Serenity Suites, Gen. Luna St., corner Makati Ave., and Salamanca St., Makati City, Ph</p>
+        </div>
+      </div>
+      <div class="info-block reveal">
+        <div class="icon-line-group">
+          <div class="icon-placeholder"><i class="bi bi-telephone"></i></div>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="icon-info-grid">
+          <p><b>Cebu Office:</b> +63-32-520-8534</p>
+          <p><b>Makati Office:</b> +63-2-833-29974</p>
+        </div>
+      </div>
+      <div class="info-block reveal">
+        <div class="icon-line-group">
+          <div class="icon-placeholder"><i class="bi bi-envelope"></i></div>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="icon-info-grid">
+          <p>admin@ashgard.com.ph</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="containerfooter reveal-down">
+    <p>© <script>document.write(new Date().getFullYear())</script> Ashgard Industries. All rights reserved.</p>
+    <p>Designed by Ashgard</p>
+  </div>
+</footer>
+
+</body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</html>

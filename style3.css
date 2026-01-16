@@ -1,0 +1,21 @@
+body {
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* pushes items to the right */
+  align-items: center;
+  width: 100%; /* keep full width */
+  box-sizing: border-box;
+  padding: 0 20px; /* optional spacing from edges */
+}
+
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 0 20px;
+  box-sizing: border-box;
+}

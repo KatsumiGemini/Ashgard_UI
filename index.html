@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashgard-Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="main-nav">
+  <a href="#Home" class="logo">
+    <img class="img reveal-left" src="img/logo_final.png" alt="Ashgard Industries Logo">
+  </a>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="navbar" id="navbar-menu reveal-right">
+    <ul role="menubar" class="menubar">
+      <li role="none"><a role="menuitem" href="#Home">Home</a></li>
+      <li role="none"><a role="menuitem" href="#about">About Us</a></li>
+      <li role="none"><a role="menuitem" href="#services">Services</a></li>
+      <li role="none"><a role="menuitem" class="contact-btn" href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <ul class="nav-links-mobile" id="navLinksMobile">
+    <li role="none"><a role="menuitem" href="#Home">Home</a></li>
+    <li role="none"><a role="menuitem" href="#about">About Us</a></li>
+    <li role="none"><a role="menuitem" href="#services">Services</a></li>
+    <li role="none"><a role="menuitem" class="contact-btn" href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<section id="Home">    
+  <div class="intro-text">
+    <div class="containerhome">
+      <h1 class="reveal-left"><b>ASHGARD <span class="highlight">INDUSTRIES</span></b></h1>
+      <h4 class="reveal-left">Guarding Data, Powering Progress</h4>
+        <p class="company-desc reveal-left">
+          Ashgard Industries is a preeminent independent technology company and leading 
+          global provider of project management and integration services. We deliver proven
+          end-to-end security, safety, and communication systems and platforms.
+        </p>
+      <!-- <a href="#contact" class="cssbuttons-io-button reveal">Get Started</a> -->
+        <div class="reveal-down" style="margin-top: 25px;">
+              <a href="#contact" class="button-52" role="button"><b>Get Started</b></a>
+        </div>
+
+    </div>
+  </div>
+  <div class="wave-bg">
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#abb8c3"></stop><stop offset="95%" stop-color="#abb8c3"></stop></linearGradient></defs><path d="M 0,500 L 0,93 C 68.06167157584683,98.52291973490426 136.12334315169366,104.04583946980853 188,125 C 239.87665684830634,145.95416053019147 275.56829896907215,182.33956185567013 331,212 C 386.43170103092785,241.66043814432987 461.6034609720176,264.5959131075111 525,283 C 588.3965390279824,301.4040868924889 640.0178571428571,315.2767857142857 696,340 C 751.9821428571429,364.7232142857143 812.3251104565538,400.29694403534614 880,428 C 947.6748895434462,455.70305596465386 1022.6817010309278,475.53543814432993 1090,484 C 1157.3182989690722,492.46456185567007 1216.948085419735,489.5613033873343 1274,510 C 1331.051914580265,530.4386966126657 1385.5259572901325,574.2193483063329 1440,618 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)"></path><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#abb8c3"></stop><stop offset="95%" stop-color="#abb8c3"></stop></linearGradient></defs><path d="M 0,500 L 0,218 C 44.82584683357878,196.00579896907217 89.65169366715756,174.01159793814435 153,188 C 216.34830633284244,201.98840206185565 298.21907216494856,251.9594072164948 368,295 C 437.78092783505144,338.0405927835052 495.4720176730485,374.1507731958763 558,403 C 620.5279823269515,431.8492268041237 687.8928571428571,453.4375 739,468 C 790.1071428571429,482.5625 824.9565537555229,490.09922680412376 878,508 C 931.0434462444771,525.9007731958762 1002.2809278350514,554.1655927835052 1067,590 C 1131.7190721649486,625.8344072164948 1189.919734904271,669.2384020618557 1251,696 C 1312.080265095729,722.7615979381443 1376.0401325478645,732.8807989690722 1440,743 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 250)"></path><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#abb8c3"></stop><stop offset="95%" stop-color="#abb8c3"></stop></linearGradient></defs><path d="M 0,500 L 0,343 C 64.78424153166421,339.6622790868925 129.56848306332842,336.324558173785 193,343 C 256.4315169366716,349.675441826215 318.5103092783505,366.36404639175254 366,401 C 413.4896907216495,435.63595360824746 446.39027982326945,488.2192562592047 512,512 C 577.6097201767305,535.7807437407953 675.9285714285714,530.7589285714286 739,554 C 802.0714285714286,577.2410714285714 829.8954344624449,628.745029455081 889,664 C 948.1045655375551,699.254970544919 1038.4896907216494,718.2609536082474 1103,727 C 1167.5103092783506,735.7390463917526 1206.1458026509574,734.2111561119293 1258,756 C 1309.8541973490426,777.7888438880707 1374.9270986745214,822.8944219440353 1440,868 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 250)"></path></svg>
+</div>
+</section>
+
+<!-- <section class="shape-container">
+  <div class="shape">
+    <h4>Ashgard Industries is a preeminent independent technology company and leading 
+    global provider of project management and integration services. We deliver proven
+    end-to-end security safety and communication systems and platforms.</h4>
+  </div>
+</section> -->
+  
+<section id="about">  
+  <div class="container">
+    <div class="divide">
+       <div class="about-title">
+            <div class="parallelogram"></div> 
+            <h2 class = "reveal-left"><b>ABOUT US</b></h2>
+        </div>
+        <h4 class = "reveal-left" >
+            ASHGARD was founded in 2014 by a group of I.T. and Intelligence experts.
+            ASHGARD brings together the power of operational experience with a deep understanding of open-source intelligence.
+            ASHGARD has manufactured and developed its own products, delivering off-the-shelf solutions as well as custom-tailored alternatives for intelligence agencies.
+            Today, our company is both an agile innovator and a heavy hitter, successfully servicing many authorized agencies in the Philippine Government and some intelligence agencies in Southeast Asia.
+            We are confident we have what it takes to repeat that success for you.
+        </h4>
+    </div>
+   <div class="divide-image">
+      <div class="floating-cards container d-flex flex-column align-items-center gap-3">
+        <div class="card card-main">
+          <img src="https://images.unsplash.com/photo-1696861273647-92dfe8bb697c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1170" alt="Main Image">
+        </div>
+        <div class="card card-left">
+          <img src="https://plus.unsplash.com/premium_photo-1682130125727-8946d42b4e88?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=500" alt="Left Image">
+        </div>
+        <div class="card card-right">
+          <img src="https://media.istockphoto.com/id/2166408604/photo/group-adult-asia-male-female-freelance-typing-write-prompt-ai-bot-it-app-smart-program-nomad.webp?a=1&b=1&s=612x612&w=0&k=20&c=MVxFXRqN3d3UMU11rRitHUU6-KQ6lmIRf0GJAnVn-2k=" alt="Right Image">
+        </div>
+        <div class="square small top-left"></div>
+        <div class="square small2 bottom-right"></div>
+        <div class="square medium top-right"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="containerservice">
+    <div class="service-title">
+      <div class="parallelogram"></div>
+      <h2 class="reveal-left"><b>SERVICES</b></h2>
+    </div>
+    <div class="services-grid">
+      <div class="horizontal-service-card reveal-left">
+        <div class="card-icon">
+          <i class="bi bi-info-circle"></i>
+        </div>
+        <div class="card-content reveal-left">
+          <h4>Information Tracing</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet porro, vitae perferendis excepturi, assumenda eos illum, harum rem quam quidem dignissimos. Repellat vitae, nisi consectetur pariatur quae facere quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!        </p>
+         </p>
+          <!-- <div class="service-description-wrapper">
+          </div> -->
+         <!-- <button class="see-more-toggle">See More <i class="bi bi-arrow-down-short"></i></button> -->
+
+          <a href="information-tracing.html" class="btn btn--huge">
+            <div class="btn--huge__text">
+              <div>
+                Learn More
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="horizontal-service-card reveal-down">
+        <div class="card-icon">
+          <i class="bi bi-cpu"></i>
+        </div>
+        <div class="card-content reveal-">
+          <h4>Cyber Security Services</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet porro, vitae perferendis excepturi, assumenda eos illum, harum rem quam quidem dignissimos. Repellat vitae, nisi consectetur pariatur quae facere quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!        </p>
+         </p>
+          <!-- <a href="CyberSecurity-Services.html" class="read-more-btn">Read More</a> -->
+          <a href="CyberSecurity-Services.html" class="btn btn--huge">
+            <div class="btn--huge__text">
+              <div>
+                Learn More
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="horizontal-service-card reveal-right">
+        <div class="card-icon">
+          <i class="bi bi-box"></i>
+        </div>
+        <div class="card-content">
+          <h4>Evidence Collection</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet porro, vitae perferendis excepturi, assumenda eos illum, harum rem quam quidem dignissimos. Repellat vitae, nisi consectetur pariatur quae facere quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit labore sapiente sit tempore beatae modi provident, obcaecati quod quae ipsa fugiat enim expedita magnam officia blanditiis consequuntur itaque! Laborum!        </p>
+          </p>
+          <!-- <a href="Evidence-Collection.html" class="read-more-btn">Read More</a> -->
+          <a href="Evidence-Collection.html" class="btn btn--huge">
+            <div class="btn--huge__text">
+              <div>
+                Learn More
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Thank you for contacting us! We will get back to you soon.
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div> -->
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+</svg> -->
+
+<section id="contact">
+  <div class="contact-content">
+    <div class ="contact-title">
+        <div class="parallelogram"> </div>
+        <h2 class="reveal-left">Get In Touch</h2>
+    </div>
+    <div class="contact-left reveal-left">
+      <div class="contact-form">
+        <!-- <a href="#Home" class="contact-logo reveal">
+          <img src="img/logo_final.png" alt="Ashgard Industries Logo">
+        </a> -->
+        <h3 style="margin-bottom: 30px; font-size: 24px;">Send us a Message</h3>
+
+        <form id="contactForm" action="submit.php" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="contact-right-blocks reveal-right">
+      <h3>Contact Information</h3>
+      <div class="info-block reveal">
+        <div class="icon-line-group">
+          <div class="icon-placeholder"><i class="bi bi-geo-alt"></i></div>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="icon-info-grid">
+          <p><b>Main Office:</b> C. Congson St., Cambiohan, Casili, Consolacion, Cebu, Philippines</p>
+          <p><b>Main Office:</b> S-3 2F, Antel SPA and Serenity Suites, Gen. Luna St., corner Makati Ave., and Salamanca St., Makati City, Ph</p>
+        </div>
+      </div>
+      <div class="info-block reveal">
+        <div class="icon-line-group">
+          <div class="icon-placeholder"><i class="bi bi-telephone"></i></div>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="icon-info-grid">
+          <p><b>Cebu Office:</b> +63-32-520-8534</p>
+          <p><b>Makati Office:</b> +63-2-833-29974</p>
+        </div>
+      </div>
+      <div class="info-block reveal">
+        <div class="icon-line-group">
+          <div class="icon-placeholder"><i class="bi bi-envelope"></i></div>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="icon-info-grid">
+          <p>admin@ashgard.com.ph</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<footer class="footer">
+  <div class="containerfooter reveal-down">
+    <p>© <script>document.write(new Date().getFullYear())</script> Ashgard Industries. All rights reserved.</p>
+    <p>Designed by Ashgard</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src ="script.js"></script>
+</html>
